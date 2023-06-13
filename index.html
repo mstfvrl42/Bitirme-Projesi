@@ -203,8 +203,8 @@
   <section class="p-5 text-center iletisim" id="iletisim">
     <div class="container">
       <h2 class="mb-5 font-weight-bold">İş Başvurusu </h2>
-      <form method="post" class="cold-md-10 text-left m-auto " name="uye_formu" method="post"
-        onsubmit="onsubmit">
+      <form id="form" class="cold-md-10 text-left m-auto " name="uye_formu" method="post" onsubmit="alert('as'); return false"
+        >
         <div class="form-group row d-flex">
           <label for="" class="col-md-2 align-self-center ">Ad:</label>
           <input type="text" name="adi" required class="col-md-3 ">
@@ -292,9 +292,6 @@
     }
 
     function onsubmit(e) {
-      e.preventdefault();
-      alert('İş Başvurunuz işleme alınmıştır. En kısa sürede çalışanlarımız geri dönüş yapacaktır.');
-      return false
     }
   </script>
   
